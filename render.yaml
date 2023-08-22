@@ -1,0 +1,5 @@
+services:
+  - name: streamlit-app
+    env: .env
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "/opt/render/project/src/.venv/bin/streamlit run CAPM_Return.py"
